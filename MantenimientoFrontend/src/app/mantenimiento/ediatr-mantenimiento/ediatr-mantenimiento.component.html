@@ -1,0 +1,47 @@
+<br>
+<div id="content">
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Actualizar Mantenimiento</h3>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="guardar()">
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input id="id" class="form-control" type="number" name="id" [(ngModel)]="mantenimiento.id" required placeholder="Ingrese su ID" minlength="4" maxlength="6">
+            </div>
+            <div class="form-group">
+                <label for="marca">Marca:</label>
+                <input id="marca" class="form-control" type="text" name="marca" [(ngModel)]="mantenimiento.marca" required placeholder="Ingrese su Nombre">
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input id="modelo" class="form-control" type="text" name="modelo" [(ngModel)]="mantenimiento.modelo" required placeholder="Ingrese su descripcion">
+            </div>
+            <div class="form-group">
+                <label for="anoFabricacion">Año Fabricacion:</label>
+                <input id="anoFabricacion" class="form-control" type="text" name="anoFabricacion" [(ngModel)]="mantenimiento.anoFabricacion" placeholder="Ingrese su Número de precio">
+            </div>
+            <div class="form-group">
+                <label for="fechaMantenimiento">Fecha Mantenimiento:</label>
+                <input id="fechaMantenimiento" class="form-control" type="datetime-local" name="fechaMantenimiento" [(ngModel)]="mantenimiento.fechaMantenimiento" placeholder="Ingrese su stock">
+            </div>
+            <div class="form-group">
+                <label for="monto">Monto:</label>
+                <input id="monto" class="form-control" type="email" name="monto" [(ngModel)]="mantenimiento.monto" placeholder="Ingrese su marca">
+            </div>
+            <div class="form-group">
+                <label for="kilometraje">Kilometraje:</label>
+                <input id="kilometraje" class="form-control" type="email" name="kilometraje" [(ngModel)]="mantenimiento.kilometraje" placeholder="Ingrese su marca">
+            </div>
+            <br>
+            <div class="text-center">
+                <button class="btn btn-success">Actualizar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</div>
+</div>
+<br>

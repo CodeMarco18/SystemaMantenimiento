@@ -1,0 +1,16 @@
+
+.card {
+    margin: 300px auto;
+}
+
+.card {
+    margin-top: 10%;
+    float: none; /* Added */
+    margin-bottom: 200px; /* Added */
+}
+#content {
+    width: calc(100% - 0px);  
+    margin-right: 0px;
+    float: right;
+    background-color: #EEEEEE;
+} 

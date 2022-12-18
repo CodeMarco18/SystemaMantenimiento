@@ -1,0 +1,44 @@
+<br>
+<div id="content">
+<div class="card">
+    <div class="card-header">
+        <h3>Lista de Mantenimiento</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>MARCA</th>
+                <th>MODELO</th>
+                <th>AÑO FABRICACION</th>
+                <th>FECHA MANTENIMIENTO</th>
+                <th>MONTO</th>
+                <th>KILOMETRAJE</th>
+                <th colspan="3" class="text-center"><a class=" btn btn-success" routerLink="/agregarMantenimiento" >Agregar Mantenimiento</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let mantenimiento of mantenimiento">
+                <td>{{mantenimiento.id}}</td>
+                <td>{{mantenimiento.marca}}</td>
+                <td>{{mantenimiento.modelo}}</td>
+                <td>{{mantenimiento.anoFabricacion}}</td>
+                <td>{{mantenimiento.fechaMantenimiento}}</td>
+                <td>{{mantenimiento.monto}}</td>
+                <td>{{mantenimiento.kilometraje}}</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <button class="btn btn-info" (click)="detalleMantenimiento(mantenimiento.id)" >Detalle</button>
+                    <button class="btn btn-warning" (click)="editarMantenimiento(mantenimiento.id)" >Editar</button>
+                    <button class="btn btn-danger" (click)="eliminarMantenimiento(mantenimiento.id)" >Eliminar</button>
+                </div>
+                </td>
+            </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<br>
